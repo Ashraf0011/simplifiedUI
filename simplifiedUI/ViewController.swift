@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var postLabel: UILabel!
+    
+    @IBAction func postButtonTouched(_ sender: Any){
+        postLabel.text = "Post: " + nameTextField.text!
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
